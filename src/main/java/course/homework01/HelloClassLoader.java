@@ -20,7 +20,7 @@ public class HelloClassLoader extends ClassLoader{
 
     @Override
     public Class<?> findClass(String name) throws ClassNotFoundException {
-        Path path = Paths.get(System.getProperty("user.dir")+"/src/main/java/demo/homework/Hello.xlass");
+        Path path = Paths.get(System.getProperty("user.dir")+"/src/main/java/course/homework01/Hello.xlass");
         byte[] bytes = new byte[0];
         try {
             bytes = Files.readAllBytes(path);
