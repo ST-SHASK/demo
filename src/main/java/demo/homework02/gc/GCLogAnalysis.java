@@ -1,4 +1,4 @@
-package demo.homework02;
+package demo.homework02.gc;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
