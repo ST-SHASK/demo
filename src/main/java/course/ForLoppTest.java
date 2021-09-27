@@ -1,4 +1,4 @@
-package demo;
+package course;
 
 public class ForLoppTest {
 

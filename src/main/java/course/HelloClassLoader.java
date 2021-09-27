@@ -1,4 +1,4 @@
-package demo;
+package course;
 
 import java.util.Base64;
 

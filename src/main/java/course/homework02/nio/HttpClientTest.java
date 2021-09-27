@@ -1,4 +1,4 @@
-package demo.homework02.nio;
+package course.homework02.nio;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;

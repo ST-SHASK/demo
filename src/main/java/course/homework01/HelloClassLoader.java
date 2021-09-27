@@ -1,4 +1,4 @@
-package demo.homework01;
+package course.homework01;
 
 import java.io.IOException;
 import java.lang.reflect.Method;

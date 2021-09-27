@@ -1,19 +1,21 @@
-package demo.homework02.nio;
+package course.homework02.nio;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-public class HttpServer02 {
+public class HttpServer03 {
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(8802);
+        ExecutorService executorService = Executors.newFixedThreadPool(
+                Runtime.getRuntime().availableProcessors() + 2);
+        final ServerSocket serverSocket = new ServerSocket(8803);
         while (true) {
             try {
                 final Socket socket = serverSocket.accept();
-                new Thread(() -> {
-                    service(socket);
-                }).start();
+                executorService.execute(() -> service(socket));
             } catch (IOException e) {
                 e.printStackTrace();
             }
