@@ -27,7 +27,7 @@ public class HttpServer03 {
             PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
             printWriter.println("HTTP/1.1 200 OK");
             printWriter.println("Content-type:text/html;charset=utf-8");
-            String body = "hello.nio";
+            String body = "hello.nio3";
             printWriter.println("Content-Length:"+body.getBytes().length);
             printWriter.println();
             printWriter.write(body);
